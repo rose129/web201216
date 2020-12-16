@@ -38,13 +38,16 @@ header#hd{ padding: 15px 0;}
 #hd a, #hd img{ display: block;}
 /* #gnb > li > a{ font-weight: bold; font-size: 20px; line-height: 46px; } */
 #gnb .d1{ font-weight: bold; font-size: 18px; line-height: 46px; margin-left: 2em;}
-#gnb .d2{ background-color: black; width: 100px; top:calc(100% + 15px); left:15px; padding: 10px 15px;}
+#gnb .d2{ display: none;
+  background-color: black; width: 100px; top:calc(100% + 15px); left:15px; padding: 10px 15px;}
 #gnb .d2 a{ font-size: 0.9em; line-height: 1.5; color: white;}
 
 #gnb li:nth-child(1) .d2{ left: 30px;}
 #gnb li:nth-child(2) .d2{ left: 20px;}
 #gnb li:nth-child(3) .d2{ left: 40px;}
 #gnb li:nth-child(4) .d2{ width: 70px;}
+
+#gnb > li:hover .d2{ display: block;}
 
 
 setion#main{}
