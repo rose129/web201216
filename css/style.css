@@ -49,7 +49,9 @@ header#hd{ padding: 15px 0;}
         background-color: black; width: 100px; top: calc(100% + 15px); left:15px; padding: 0 15px;
         height: 0; transition: 0.5s; overflow: hidden;
         }
-#gnb .d2 a{ font-size: 0.9em; line-height: 1.5; color: white;  }
+#gnb .d2:before{ content: ""; display: block; height: 15px;}
+
+#gnb .d2 a{ font-size: 0.9em; line-height: 1.5; color: white; ;}
 
 #gnb li:nth-child(1) .d2{ left: 30px;}
 #gnb li:nth-child(2) .d2{ left: 20px;}
