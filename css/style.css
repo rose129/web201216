@@ -41,8 +41,10 @@ header#hd{ padding: 15px 0;}
 #gnb .d1{ font-weight: bold; font-size: 18px; line-height: 46px; padding-left: 2em; padding-bottom: 15px;
           background: yellow;}
 
-#gnb .d2{ display: none;
-  background-color: black; width: 100px; top: calc(100% + 15px); left:15px; padding: 10px 15px;}
+#gnb .d2{
+        background-color: black; width: 100px; top: calc(100% + 15px); left:15px; padding: 0 15px;
+        height: 0; transition: 0.5s; overflow: hidden;
+        }
 #gnb .d2 a{ font-size: 0.9em; line-height: 1.5; color: white;  }
 
 #gnb li:nth-child(1) .d2{ left: 30px;}
@@ -50,7 +52,7 @@ header#hd{ padding: 15px 0;}
 #gnb li:nth-child(3) .d2{ left: 40px;}
 #gnb li:nth-child(4) .d2{ width: 70px;}
 
-#gnb > li:hover .d2{ display: block;}
+#gnb > li:hover .d2{ display: block; height: 120px;}
 
 
 setion#main{}
